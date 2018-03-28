@@ -30,6 +30,12 @@ class LoginButtonTransfromViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //闭包方式播放动画
+//        UIView.animate(withDuration: 1) {
+//            self.loginButton?.frame = CGRect(x: 20, y: (self.loginButton?.frame.origin.y)!, width: (self.loginButton?.frame.size.width)!, height: (self.loginButton?.frame.size.height)!)
+//        }
+        
+        //使用view方法的方式播放动画
         UIView.beginAnimations(nil, context: nil)
         UIView.setAnimationDuration(1)
         loginButton?.frame = CGRect(x: 20, y: (self.loginButton?.frame.origin.y)!, width: (self.loginButton?.frame.size.width)!, height: (self.loginButton?.frame.size.height)!)

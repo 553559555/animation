@@ -13,6 +13,9 @@
 		76053F541EF4F33600DDE097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76053F531EF4F33600DDE097 /* Assets.xcassets */; };
 		76053F571EF4F33600DDE097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76053F551EF4F33600DDE097 /* LaunchScreen.storyboard */; };
 		76053F601EF4F54200DDE097 /* LoginButtonTransfromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76053F5F1EF4F54200DDE097 /* LoginButtonTransfromViewController.swift */; };
+		B4B895F2206B83530094C776 /* TransformAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B895F1206B83530094C776 /* TransformAnimationViewController.swift */; };
+		B4B895F4206B88880094C776 /* KeyframesAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B895F3206B88880094C776 /* KeyframesAnimationViewController.swift */; };
+		B4B895F7206B8E490094C776 /* FrameByFrameAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B895F6206B8E490094C776 /* FrameByFrameAnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		76053F561EF4F33600DDE097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76053F581EF4F33600DDE097 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76053F5F1EF4F54200DDE097 /* LoginButtonTransfromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonTransfromViewController.swift; sourceTree = "<group>"; };
+		B4B895F1206B83530094C776 /* TransformAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformAnimationViewController.swift; sourceTree = "<group>"; };
+		B4B895F3206B88880094C776 /* KeyframesAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyframesAnimationViewController.swift; sourceTree = "<group>"; };
+		B4B895F6206B8E490094C776 /* FrameByFrameAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameByFrameAnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +76,20 @@
 		76053F5E1EF4F50E00DDE097 /* AnimationViewController */ = {
 			isa = PBXGroup;
 			children = (
-				76053F5F1EF4F54200DDE097 /* LoginButtonTransfromViewController.swift */,
+				B4B895F5206B88A40094C776 /* ViewAnimatiom */,
 			);
 			name = AnimationViewController;
+			sourceTree = "<group>";
+		};
+		B4B895F5206B88A40094C776 /* ViewAnimatiom */ = {
+			isa = PBXGroup;
+			children = (
+				76053F5F1EF4F54200DDE097 /* LoginButtonTransfromViewController.swift */,
+				B4B895F1206B83530094C776 /* TransformAnimationViewController.swift */,
+				B4B895F3206B88880094C776 /* KeyframesAnimationViewController.swift */,
+				B4B895F6206B8E490094C776 /* FrameByFrameAnimationViewController.swift */,
+			);
+			name = ViewAnimatiom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				76053F4F1EF4F33600DDE097 /* ViewController.swift in Sources */,
+				B4B895F2206B83530094C776 /* TransformAnimationViewController.swift in Sources */,
+				B4B895F4206B88880094C776 /* KeyframesAnimationViewController.swift in Sources */,
 				76053F4D1EF4F33600DDE097 /* AppDelegate.swift in Sources */,
+				B4B895F7206B8E490094C776 /* FrameByFrameAnimationViewController.swift in Sources */,
 				76053F601EF4F54200DDE097 /* LoginButtonTransfromViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,6 +334,7 @@
 				76053F5D1EF4F33600DDE097 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
